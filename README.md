@@ -43,9 +43,32 @@ This is a RESTful API for a library management system built using PHP Laravel. T
 1. **Start the Development Server**
     ```bash
     php artisan serve
-    The application will be available at http://localhost:8000.
+The application will be available at http://localhost:8000.
+
 2. **Running Tests**
     ```bash
     php artisan test
 
 
+## API Endpoints
+- Authors
+    - GET /api/authors
+    - GET /api/authors/{id}
+    - POST /api/authors
+    - PUT /api/authors/{id}
+    - DELETE /api/authors/{id}
+
+- Books
+    - GET /api/books
+    - GET /api/books/{id}
+    - POST /api/books
+    - PUT /api/books/{id}
+    - DELETE /api/books/{id}
+
+- Associations
+    - GET /api/authors/{id}/books
+
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
